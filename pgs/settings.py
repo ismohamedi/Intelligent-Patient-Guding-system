@@ -25,7 +25,7 @@ SECRET_KEY = '_maf_^kt(u(l+!e_zjbetu170#-9y@2$td4_fwb+0p*1lyi$ac'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
