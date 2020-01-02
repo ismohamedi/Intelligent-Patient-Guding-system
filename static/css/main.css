@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background:rgba(0, 0, 0, 0.02);
+}
+body a,
+.btn,
+button {
+    cursor: pointer !important;
+}
+#container{
+background-color:#0750FF;
+color:white;
+height:4rem;
+
+}
+#center-div{
+text-alain:center;
+}
+#logo{
+border-radius:360px;
+margin-left:1rem;
+}
+
+#logo h2{
+	font-family: 'Raleway', sans-serif;
+
+}
+#list li a{
+color:white;
+cursor:pointer;
+font-weight: bold;
+}
+#list li{
+list-style:none;
+}
+
+#left_div{
+	border:2px lightgrey solid;
+	border-radius: 3px;
+	height: auto;
+	top: 5rem;
+	padding-left: 0;
+}
+#reg_row{
+	overflow: scroll;
+
+}
+#right_div{
+	border:2px blue solid;
+	height: 400px;
+	top: 5rem;
+	padding-left: 0;
+}
+
+#main{
+	position: fixed;
+}
+
+

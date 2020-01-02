@@ -1,0 +1,38 @@
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary float-bottom-left" data-toggle="form_modal3" data-target="#exampleModalCenter"><span class="fa fa-send"></span>
+</button>
+
+<!--  for chatbot -->
+         <div class="modal fade" id="form_modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="POST" action="delete_cv.php" enctype="multipart/form-data">
+                    <div class="modal-header">
+                        <h3 class="modal-title">pgs Assistant</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8">
+                             <div class="form-group editContent" style="outline: none; cursor: inherit;">
+
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div class="modal-footer">
+                       <textarea readonly="true" id="botChat" class="form-control"></textarea>
+                                    <input type="text" placeholder="Ask a question" onKeypress="enterButton(event, document.getElementsByTagName('input')[0].value);" style="color:red; background-color:black; width:79%;"> 
+                                <button onClick="answer(document.getElementsByTagName('input')[0].value)"><span class="fa fa-send"></span></button></p>
+
+                        <button class="btn btn-danger" type="button" data-dismiss="modal"><span class="fa fa-remove"></span> Close</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {% load staticfiles%}   
+<script type="text/javascript" src="{% static 'js/chatbot.js'%}"></script>

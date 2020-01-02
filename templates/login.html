@@ -1,0 +1,46 @@
+{% include 'header.html'%}
+<div class="layer">
+{% load static %}
+{% load static%}
+<link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+
+<center>
+    <div class="col-4" id="login">
+        <img src="{% static 'images/STAY.jpg'%}" height="100" width="100">
+    <form method="post">
+        <br>
+ <center><h2>Login to PGS</h2></center>
+            <div class=" w3l-form-group">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="👤Username" required="required" name="user_email" />
+                </div>
+            </div>
+            <div class=" w3l-form-group">
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password" required="required" name="password" />
+                    <br>
+                </div>
+            </div>
+            <div class="forgot">
+                <a class="float-right" href="" onclick="foget()"> Forgot Password?</a>
+                <p class="float-left"><input type="checkbox" name="remember" checked> Remember Me</p>
+            </div>
+
+            <button  type="submit" name="submit" class="btn btn-primary float-center" id="btn">login</button>
+        </form>
+    </div>
+    </center>
+ <script type="text/javascript">
+
+        function foget() {
+            var email= prompt("Enter your email for Reset", "");
+            if(email){
+                alert("Thanks change password link as been sent to your email");
+            }
+        }
+    </script>
+{% include 'chat.html'%}
+
+</div>
+</body>
+</html>
